@@ -1,0 +1,22 @@
+[project]
+name = "my-marimo-project"
+version = "0.1.0"
+description = "A project using marimo, ruff, and uv."
+dependencies = [
+    "marimo",
+    "ruff",
+    "polars"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+# Add ruff specific configurations here (see step 5)
+line-length = 88
+select = ["E", "F", "W", "I"] # Example: enable pyflakes, pycodestyle errors/warnings, and isort
+
+[tool.ruff.format]
+# Add ruff formatter specific configurations here (see step 5)
+quote-style = "double"
